@@ -35,7 +35,7 @@ address = input("Please enter your address (num street city state zip): ")
 phone = input("Please enter your phone number(example: 555-555-5555): ")
 
 with open(completePath, 'w') as fileHandle: #open file for writing
-  fileHandle.write("Thanks for entering your info SUCKA! You are now added to our spam email list!") #write data to file
+  fileHandle.write("Thanks for entering your info SUCKA! You've been added to our spam email list!") #write data to file
   fileHandle.write('\n\n') #skipping a couple lines
   fileHandle.write (name)
   fileHandle.write(',') #adding comma separation
@@ -47,4 +47,3 @@ print("This is what's in the text file:")
 with open(completePath, 'r') as fileHandle: #open same file for reading
   data = fileHandle.read() #read data from the file
   print(data)
-  
