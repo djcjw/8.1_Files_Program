@@ -32,6 +32,7 @@ else:
 #user input variables        
 name = input('Please enter your name (First Last): ')
 address = input("Please enter your address (num street city state zip): ")
+email = input('Please enter in your email address: ')
 phone = input("Please enter your phone number(example: 555-555-5555): ")
 
 with open(completePath, 'w') as fileHandle: #open file for writing
@@ -40,6 +41,8 @@ with open(completePath, 'w') as fileHandle: #open file for writing
   fileHandle.write (name)
   fileHandle.write(',') #adding comma separation
   fileHandle.write (address)
+  fileHandle.write(',')
+  fileHandle.write(email)
   fileHandle.write(',')
   fileHandle.write (phone)
     
